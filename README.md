@@ -1,5 +1,7 @@
 # 經濟學園 · Econ Garden
 
+> 🌐 **線上版（任何裝置都能開）**：<https://carloswuwu.github.io/econ-garden/>
+
 > 一個**完全離線**、可安裝到桌面／主屏幕的互動經濟學學習應用：由**中一**（公民、經濟與社會）一路學到**大學經濟學主修核心**，每課有雙語小課堂、隨機生成的計算練習、概念題庫、計分測驗與模擬試卷，進度保存在本機。
 
 本 app 沿用「數學樂園 · Math Garden」成熟的介面與學習流程，內容、題型與課程則按香港經濟學課程重新編寫。**不設學前與小學階段**——因為正規經濟學教育由中一開始，詳見 [課程設計說明](docs/CURRICULUM-DESIGN.md)。
@@ -29,9 +31,10 @@
 
 ## 怎麼開始
 
-1. **雙擊 `play-econ.bat`**（Windows）：在乾淨的桌面應用窗口打開，無需聯網。
-2. **雙擊 `index.html`**：用任何瀏覽器直接打開（classic scripts，無需 build）。
-3. **安裝成 App（PWA）**：用 `node tests/serve.js` 在本機啟動 HTTP（或部署到任何 HTTPS 靜態主機），在 Chrome／Edge 點「安裝」，即可離線全屏使用；有新版本時會顯示更新按鈕。
+1. **線上使用**：開啟 <https://carloswuwu.github.io/econ-garden/>。
+2. **雙擊 `play-econ.bat`**（Windows）：在乾淨的桌面應用窗口打開，無需聯網。
+3. **雙擊 `index.html`**：用任何瀏覽器直接打開（classic scripts，無需 build）。
+4. **安裝成 App（PWA）**：線上版或本機 HTTP（`node tests/serve.js`）都可以在 Chrome／Edge 點「安裝」，即可離線全屏使用；有新版本時會顯示更新按鈕。
 
 > 進度存在瀏覽器 `localStorage`（`econpath.progress`）；學習中心可**導出／導入**進度，方便備份或換裝置。
 
@@ -119,6 +122,10 @@ node tests/offline-smoke.js          # 先開 serve.js，再測 Service Worker �
 - 教育局《經濟課程及評估指引（中四至中六）》（2025 年更新；2025/26 學年起中四推行，適用於 2028 年起 HKDSE）：必修部分 10 個課題（A–J）＋兩個選修單元。[連結](https://amp.edb.edcity.hk/doc/chi/Econ.pdf)
 - 考評局 HKDSE 經濟科評核安排。[連結](https://www.hkeaa.edu.hk/tc/hkdse/hkdse_subj.html?A1&1&9)
 - 大學階段按本地大學經濟學主修常見核心課程整理（微觀、宏觀、計量、應用、思想史），只覆蓋入門核心，不取代大學課本。
+
+## 部署
+
+本專案沒有 build step；GitHub Pages 直接從 `main` 分支根目錄發佈（`.nojekyll` 已加入，避免 Jekyll 處理）。推送到 `main` 後會自動重新部署到 <https://carloswuwu.github.io/econ-garden/>。Service Worker、manifest 與 KaTeX 字型都用相對路徑，因此同一份檔案也可放在任何靜態主機或本機 `file://` 使用。
 
 ## 品質保證（本版本已跑）
 
