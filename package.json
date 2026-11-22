@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "經濟學園 · Econ Garden — bilingual offline-first economics learning PWA (S1–university).",
+  "license": "MIT",
   "scripts": {
     "check": "node tests/dev-gen-check.js",
     "serve": "node tests/serve.js",

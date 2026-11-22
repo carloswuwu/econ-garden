@@ -92,6 +92,7 @@
 | `play-econ.bat` | Windows 啟動器 |
 | `tools/patch-app.js` | 從數學版 app.js 產生經濟學園界面層的可重跑補丁 |
 | `tools/make-icons.ps1` | 重新生成應用圖標（Windows PowerShell + System.Drawing） |
+| `LICENSE` | MIT 授權條文 |
 | `THIRD-PARTY-NOTICES.md` | 第三方軟件授權（KaTeX MIT；完整條文在 `vendor/katex/LICENSE`） |
 
 ## 開發與測試
@@ -144,7 +145,7 @@ node tests/offline-smoke.js          # 先開 serve.js，再測 Service Worker �
 
 ## 授權
 
-本專案目前**未附上專案層級的 LICENSE 檔**，因此預設為「版權所有」（公開 repo 不代表他人可自由使用、修改或再發佈）。第三方元件 KaTeX 以 MIT 授權，條文與版權聲明見 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md)。如要正式以開源方式分享，建議加入 MIT（寬鬆、最簡單）或 PolyForm Noncommercial 1.0.0（禁止商業使用）；詳見專案對話中的說明。
+本專案以 **MIT License** 釋出，版權所有 © 2026 Carlos Wu。你可以自由使用、修改、發佈、再授權及作商業用途，只需保留 [`LICENSE`](LICENSE) 內的版權與許可聲明。第三方元件 KaTeX 同樣以 MIT 授權，其版權聲明見 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md)。
 
 ## 說明與限制
 
