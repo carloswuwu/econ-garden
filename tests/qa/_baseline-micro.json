@@ -1,0 +1,326 @@
+{
+ "file": "micro",
+ "types": 3,
+ "failTypes": 0,
+ "sampleTotal": 1170,
+ "results": {
+  "ped_tr": {
+   "samples": 90,
+   "fail": [],
+   "minor": [
+    {
+     "kind": "long-decimal-solution",
+     "msg": "解題步驟出現超過 2 位小數的數字（可能是浮點誤差或合法中間值）",
+     "examples": [
+      {
+       "where": "s4.elasticity/step1(L2)",
+       "seed": 41250,
+       "zh": "某商品的需求價格彈性（絕對值）為 1.8。若價格下跌 25%，假設其他因素不變，求總收入的變動百分比（上升為正、下跌為負，四捨五入至 2 位小數）。",
+       "answer": 8.75,
+       "math": {
+        "mode": "percent",
+        "ped": 1.8,
+        "dPricePct": -25,
+        "dQuantityPct": 45,
+        "trPct": 8.75,
+        "answer": 8.75
+       },
+       "text": "1.0875",
+       "lang": "zh"
+      },
+      {
+       "where": "s4.elasticity/step1(L2)",
+       "seed": 41250,
+       "zh": "某商品的需求價格彈性（絕對值）為 1.8。若價格下跌 25%，假設其他因素不變，求總收入的變動百分比（上升為正、下跌為負，四捨五入至 2 位小數）。",
+       "answer": 8.75,
+       "math": {
+        "mode": "percent",
+        "ped": 1.8,
+        "dPricePct": -25,
+        "dQuantityPct": 45,
+        "trPct": 8.75,
+        "answer": 8.75
+       },
+       "text": "1.0875",
+       "lang": "en"
+      },
+      {
+       "where": "s4.elasticity/step1(L2)",
+       "seed": 41935,
+       "zh": "某商品的需求價格彈性（絕對值）為 3。若價格下跌 15%，假設其他因素不變，求總收入的變動百分比（上升為正、下跌為負，四捨五入至 2 位小數）。",
+       "answer": 23.25,
+       "math": {
+        "mode": "percent",
+        "ped": 3,
+        "dPricePct": -15,
+        "dQuantityPct": 45,
+        "trPct": 23.25,
+        "answer": 23.25
+       },
+       "text": "1.2325",
+       "lang": "zh"
+      }
+     ],
+     "count": 10
+    }
+   ]
+  },
+  "xed": {
+   "samples": 90,
+   "fail": [],
+   "minor": [
+    {
+     "kind": "long-decimal-prompt",
+     "msg": "題幹出現超過 2 位小數的數字（多為浮點誤差未格式化）",
+     "examples": [
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 400,
+        "qx2": 480,
+        "xed": 2,
+        "relation": "substitute",
+        "answer": 2
+       },
+       "text": "110.00000000000001",
+       "lang": "zh"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 400,
+        "qx2": 480,
+        "xed": 2,
+        "relation": "substitute",
+        "answer": 2
+       },
+       "text": "110.00000000000001",
+       "lang": "en"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 43031,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 300 件變為 240 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": -2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 300,
+        "qx2": 240,
+        "xed": -2,
+        "relation": "complement",
+        "answer": -2
+       },
+       "text": "110.00000000000001",
+       "lang": "zh"
+      }
+     ],
+     "count": 6
+    },
+    {
+     "kind": "long-decimal-solution",
+     "msg": "解題步驟出現超過 2 位小數的數字（可能是浮點誤差或合法中間值）",
+     "examples": [
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 400,
+        "qx2": 480,
+        "xed": 2,
+        "relation": "substitute",
+        "answer": 2
+       },
+       "text": "110.00000000000001",
+       "lang": "zh"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 400,
+        "qx2": 480,
+        "xed": 2,
+        "relation": "substitute",
+        "answer": 2
+       },
+       "text": "110.00000000000001",
+       "lang": "en"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 43031,
+       "zh": "物品 Y 的價格由 100 元變為 110.00000000000001 元，物品 X 的需求量由 300 件變為 240 件。假設其他因素不變，用初始值法計算 X 對 Y 價格的交叉彈性（XED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": -2,
+       "math": {
+        "mode": "initial-levels",
+        "py1": 100,
+        "py2": 110.00000000000001,
+        "qx1": 300,
+        "qx2": 240,
+        "xed": -2,
+        "relation": "complement",
+        "answer": -2
+       },
+       "text": "110.00000000000001",
+       "lang": "zh"
+      }
+     ],
+     "count": 6
+    }
+   ]
+  },
+  "yed": {
+   "samples": 90,
+   "fail": [],
+   "minor": [
+    {
+     "kind": "long-decimal-prompt",
+     "msg": "題幹出現超過 2 位小數的數字（多為浮點誤差未格式化）",
+     "examples": [
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "某家庭每月收入由 1840 元變為 2024.0000000000002 元，對物品 X 的每月需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1840,
+        "income2": 2024.0000000000002,
+        "quantity1": 400,
+        "quantity2": 480,
+        "yed": 2,
+        "kind": "luxury",
+        "answer": 2
+       },
+       "text": "2024.0000000000002",
+       "lang": "zh"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "某家庭每月收入由 1840 元變為 2024.0000000000002 元，對物品 X 的每月需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1840,
+        "income2": 2024.0000000000002,
+        "quantity1": 400,
+        "quantity2": 480,
+        "yed": 2,
+        "kind": "luxury",
+        "answer": 2
+       },
+       "text": "2024.0000000000002",
+       "lang": "en"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 41798,
+       "zh": "某家庭每月收入由 1320 元變為 1452.0000000000002 元，對物品 X 的每月需求量由 200 件變為 184 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": -0.8,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1320,
+        "income2": 1452.0000000000002,
+        "quantity1": 200,
+        "quantity2": 184,
+        "yed": -0.8,
+        "kind": "inferior",
+        "answer": -0.8
+       },
+       "text": "1452.0000000000002",
+       "lang": "zh"
+      }
+     ],
+     "count": 12
+    },
+    {
+     "kind": "long-decimal-solution",
+     "msg": "解題步驟出現超過 2 位小數的數字（可能是浮點誤差或合法中間值）",
+     "examples": [
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "某家庭每月收入由 1840 元變為 2024.0000000000002 元，對物品 X 的每月需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1840,
+        "income2": 2024.0000000000002,
+        "quantity1": 400,
+        "quantity2": 480,
+        "yed": 2,
+        "kind": "luxury",
+        "answer": 2
+       },
+       "text": "2024.0000000000002",
+       "lang": "zh"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 40017,
+       "zh": "某家庭每月收入由 1840 元變為 2024.0000000000002 元，對物品 X 的每月需求量由 400 件變為 480 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": 2,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1840,
+        "income2": 2024.0000000000002,
+        "quantity1": 400,
+        "quantity2": 480,
+        "yed": 2,
+        "kind": "luxury",
+        "answer": 2
+       },
+       "text": "2024.0000000000002",
+       "lang": "en"
+      },
+      {
+       "where": "s4.elasticity_other/step1(L2)",
+       "seed": 41798,
+       "zh": "某家庭每月收入由 1320 元變為 1452.0000000000002 元，對物品 X 的每月需求量由 200 件變為 184 件。假設其他因素不變，用初始值法計算物品 X 的收入彈性（YED），並保留正負號（四捨五入至 2 位小數）。",
+       "answer": -0.8,
+       "math": {
+        "mode": "initial-levels",
+        "income1": 1320,
+        "income2": 1452.0000000000002,
+        "quantity1": 200,
+        "quantity2": 184,
+        "yed": -0.8,
+        "kind": "inferior",
+        "answer": -0.8
+       },
+       "text": "1452.0000000000002",
+       "lang": "zh"
+      }
+     ],
+     "count": 12
+    }
+   ]
+  }
+ },
+ "genErrors": {}
+}

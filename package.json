@@ -1,0 +1,18 @@
+{
+  "name": "econ-garden",
+  "version": "1.0.0",
+  "private": true,
+  "description": "經濟學園 · Econ Garden — bilingual offline-first economics learning PWA (S1–university).",
+  "scripts": {
+    "check": "node tests/dev-gen-check.js",
+    "serve": "node tests/serve.js",
+    "smoke": "node tests/ui-smoke.js",
+    "browser": "node tests/browser-smoke.js",
+    "a11y": "node tests/a11y-smoke.js",
+    "offline": "node tests/offline-smoke.js"
+  },
+  "devDependencies": {
+    "jsdom": "25.0.1",
+    "puppeteer-core": "^23.11.1"
+  }
+}

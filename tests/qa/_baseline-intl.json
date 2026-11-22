@@ -1,0 +1,85 @@
+{
+ "file": "intl",
+ "types": 1,
+ "failTypes": 0,
+ "sampleTotal": 1080,
+ "results": {
+  "fiscal_balance": {
+   "samples": 180,
+   "fail": [],
+   "minor": [
+    {
+     "kind": "zh-en-number-mismatch",
+     "msg": "中文與英文題幹的（多位數）數字集合不一致",
+     "examples": [
+      {
+       "where": "s2.fiscal_budget/step0(L1)",
+       "seed": 40000,
+       "zh": "某政府年度的財政數據如下（以億港元為單位，其他因素不變）：政府收入 4,990 億；政府支出 4,590 億。求財政盈餘或赤字（盈餘以正數表示，赤字以負數表示）。答案以億港元計。",
+       "answer": 400,
+       "math": {
+        "mode": "overall",
+        "revenue": 4990,
+        "spending": 4590
+       },
+       "zhNums": [
+        "4990",
+        "4590"
+       ],
+       "enNums": [
+        "100",
+        "4990",
+        "4590",
+        "100"
+       ]
+      },
+      {
+       "where": "s2.fiscal_budget/step0(L1)",
+       "seed": 40137,
+       "zh": "某政府年度的財政數據如下（以億港元為單位，其他因素不變）：政府收入 6,760 億；政府支出 6,279 億。求財政盈餘或赤字（盈餘以正數表示，赤字以負數表示）。答案以億港元計。",
+       "answer": 481,
+       "math": {
+        "mode": "overall",
+        "revenue": 6760,
+        "spending": 6279
+       },
+       "zhNums": [
+        "6760",
+        "6279"
+       ],
+       "enNums": [
+        "100",
+        "6760",
+        "6279",
+        "100"
+       ]
+      },
+      {
+       "where": "s2.fiscal_budget/step0(L1)",
+       "seed": 40274,
+       "zh": "某政府年度的財政數據如下（以億港元為單位，其他因素不變）：政府收入 6,380 億；政府支出 6,642 億。求財政盈餘或赤字（盈餘以正數表示，赤字以負數表示）。答案以億港元計。",
+       "answer": -262,
+       "math": {
+        "mode": "overall",
+        "revenue": 6380,
+        "spending": 6642
+       },
+       "zhNums": [
+        "6380",
+        "6642"
+       ],
+       "enNums": [
+        "100",
+        "6380",
+        "6642",
+        "100"
+       ]
+      }
+     ],
+     "count": 180
+    }
+   ]
+  }
+ },
+ "genErrors": {}
+}

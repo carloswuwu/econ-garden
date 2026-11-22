@@ -1,0 +1,17 @@
+{
+  "name": "經濟學園 · Econ Garden",
+  "short_name": "經濟學園",
+  "description": "由中一到大學、離線可用的互動經濟學學習應用：小課堂、隨機練習、計分測驗與模擬試卷。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF3E0",
+  "theme_color": "#4A87C7",
+  "lang": "zh-Hant-HK",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,5 @@
+node_modules/
+tests/_chrome-profile*/
+tests/qa/_*.txt
+tests/qa/_results-*.json
+tests/qa/_summary.json

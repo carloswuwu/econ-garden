@@ -1,0 +1,394 @@
+[
+ {
+  "type": "balance_payments",
+  "skills": "s3.balance_payments,s6.balance_payments",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "budget_line",
+  "skills": "col.consumer",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "budget_personal",
+  "skills": "s1.budget",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "comparative_advantage",
+  "skills": "s3.trade,s6.trade_theory,col.international,chal.trade",
+  "levels": "1/2/3",
+  "samples": 360,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "cost",
+  "skills": "s4.cost,col.producer",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "cpi",
+  "skills": "s2.inflation",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "data_read",
+  "skills": "chal.game_data",
+  "levels": "2/3(1 直接測試)",
+  "samples": 120,
+  "status": "PASS*",
+  "issues": "zh-en-number-mismatch×47"
+ },
+ {
+  "type": "demand_shift",
+  "skills": "s4.demand",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "equilibrium",
+  "skills": "s4.equilibrium,col.market_welfare",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "exchange_rate",
+  "skills": "s3.exchange_rate,s6.exchange_rate",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "externality",
+  "skills": "s5.externality,col.public",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "fiscal_balance",
+  "skills": "s2.fiscal_budget,s6.fiscal_policy",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS*",
+  "issues": "zh-en-number-mismatch×180"
+ },
+ {
+  "type": "game_theory",
+  "skills": "s5.oligopoly,col.game_theory,chal.game_data",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "gdp_exp",
+  "skills": "s2.gdp,s6.national_income",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "gdp_real",
+  "skills": "s6.national_income",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×4; long-decimal-solution×4"
+ },
+ {
+  "type": "gini",
+  "skills": "chal.game_data",
+  "levels": "2/3(1 直接測試)",
+  "samples": 120,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "growth",
+  "skills": "s2.growth,s3.china_economy,s3.development,s6.growth_development,col.growth_theory",
+  "levels": "1/2/3",
+  "samples": 390,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×16; long-decimal-solution×90"
+ },
+ {
+  "type": "growth_model",
+  "skills": "col.growth_theory",
+  "levels": "2/3(1 直接測試)",
+  "samples": 120,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "hhi",
+  "skills": "s5.market_structure,chal.game_data",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "income_eq",
+  "skills": "s6.income_determination,col.macro_models,chal.macro",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×76; long-decimal-solution×76"
+ },
+ {
+  "type": "inflation",
+  "skills": "s6.macro_problems",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×4; long-decimal-solution×44"
+ },
+ {
+  "type": "interest",
+  "skills": "s1.interest,s1.investment,s6.money_demand,chal.finance",
+  "levels": "1/2/3",
+  "samples": 360,
+  "status": "PASS*",
+  "issues": "long-decimal-solution×154"
+ },
+ {
+  "type": "labour",
+  "skills": "s5.factor_markets,col.labour",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "money_demand",
+  "skills": "s6.money_demand,col.monetary_theory",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "money_multiplier",
+  "skills": "s6.money_banking,s6.monetary_policy",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "monopoly",
+  "skills": "s5.monopoly",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "multiplier",
+  "skills": "s6.income_determination,col.macro_models,chal.macro",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "mv",
+  "skills": "col.consumer",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "npv",
+  "skills": "chal.finance",
+  "levels": "2/3(1 直接測試)",
+  "samples": 120,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "oppcost",
+  "skills": "s1.opportunity_cost,s4.basic_concepts",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "ped",
+  "skills": "s4.elasticity,chal.elasticity_tax",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "ped_tr",
+  "skills": "s4.elasticity",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS*",
+  "issues": "long-decimal-solution×10"
+ },
+ {
+  "type": "percentage",
+  "skills": "s1.percentage",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "pes",
+  "skills": "s4.elasticity_other",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "ppc",
+  "skills": "s4.basic_concepts",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "ppp",
+  "skills": "s6.exchange_rate,col.international",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "price_control",
+  "skills": "s5.price_controls",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "price_discrimination",
+  "skills": "s5.price_discrimination",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "profit",
+  "skills": "s4.profit,s5.perfect_competition,col.producer",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "regression",
+  "skills": "col.econometrics",
+  "levels": "2/3(1 直接測試)",
+  "samples": 120,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "supply_shift",
+  "skills": "s4.supply",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "surplus",
+  "skills": "s5.surplus,col.market_welfare",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "tariff",
+  "skills": "s3.trade_policy,s6.trade_theory,chal.trade",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "tax_basic",
+  "skills": "s2.tax_types",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "tax_incidence",
+  "skills": "s5.tax_incidence,col.public,chal.elasticity_tax",
+  "levels": "1/2/3",
+  "samples": 270,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "tax_progressive",
+  "skills": "s2.tax_progressive",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "unemployment",
+  "skills": "s2.unemployment,s6.macro_problems",
+  "levels": "1/2/3",
+  "samples": 180,
+  "status": "PASS",
+  "issues": ""
+ },
+ {
+  "type": "xed",
+  "skills": "s4.elasticity_other",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×6; long-decimal-solution×6"
+ },
+ {
+  "type": "yed",
+  "skills": "s4.elasticity_other",
+  "levels": "1/2/3",
+  "samples": 90,
+  "status": "PASS*",
+  "issues": "long-decimal-prompt×12; long-decimal-solution×12"
+ }
+]
